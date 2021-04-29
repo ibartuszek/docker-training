@@ -36,3 +36,6 @@
 - syntax: `docker rm <container id>`
 #### Remove all containers:
 - syntax: `docker rm $(docker ps -a -q)`
+
+### Run ubuntu image locally
+- command: `docker run -it ubuntu`
