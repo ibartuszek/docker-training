@@ -3,7 +3,7 @@
 ## Containers
 
 ### Run
-- syntax: `docker rund -itd --name <container name> -p <host port>:<port in container> <image name>:<tag>`
+- syntax: `docker run -itd --name <container name> -p <host port>:<port in container> <image name>:<tag>`
   - where:
     - `-d` detached mode -> container lif = terminal life
     - `-p` port mapping
