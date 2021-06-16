@@ -37,3 +37,6 @@ must show the docker Client version and its API version, Server version and its 
 - create automated build: `Dashboard\Create\Create Automated Build`
 - customize: branch etc.
 - Build settings: trigger the build
+
+## Mounting
+- to mount a volume, shared drives must be enabled at docker settings

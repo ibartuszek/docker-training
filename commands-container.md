@@ -3,11 +3,12 @@
 ## Containers
 
 ### Run
-- syntax: `docker run -itd --name <container name> -p <host port>:<port in container> <image name>:<tag>`
+- syntax: `docker run -itd --name <container name> -p <...> -v <...> <image name>:<tag>`
   - where:
     - `-d` detached mode -> container lif = terminal life
-    - `-p` port mapping
-- example: `docker run -itd --name my-http-container-1 -p 5555:80 my-httpd:latest`
+    - `-p <host port>:<port in container>` port mapping
+    - `-v <host-volume-absolute-path>:<container-volume-path>` mount volume
+- example: `docker run -itd --name my-http-container-1 -p 5555:80 -v c:/projects/logs/my-httpd:/opt/tomcat/logs my-httpd:latest`
 
 ### List
 #### Running containers
